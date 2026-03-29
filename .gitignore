@@ -1,0 +1,304 @@
+# ==============================================
+# Arquivos e pastas que NÃO devem ser commitados
+# ==============================================
+
+# -------------------------------
+# 🔒 Arquivos de resultado/execução
+# -------------------------------
+# Pastas de sessão (contêm dados sensíveis)
+wifipwn_bhu_*/
+wifipwn_*/
+scan_results_*/
+output_*/
+
+# Relatórios gerados
+*.html
+*.pdf
+*.csv
+*.json
+*.xml
+*.xlsx
+
+# Screenshots e capturas
+screenshots/
+captures/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.pcap
+*.cap
+
+# Logs
+*.log
+execution.log
+debug.log
+error.log
+
+# -------------------------------
+# 🗂️ Dados coletados
+# -------------------------------
+# Listas de dispositivos
+hosts.txt
+arp_hosts.txt
+nmap_hosts.txt
+all_hosts.txt
+ips_ativos.txt
+dispositivos.txt
+
+# Dados de scan
+scan_*.txt
+vuln_*.txt
+mac_info.txt
+cameras_encontradas.txt
+web_panels.txt
+ssh_hosts.txt
+telnet_hosts.txt
+intel_bras.txt
+hikvision.txt
+tplink.txt
+fabricantes_detectados.txt
+credenciais_encontradas.txt
+
+# Configurações baixadas
+config_*.bin
+*.cfg
+*.conf
+*.config
+
+# -------------------------------
+# 🔐 Credenciais e dados sensíveis
+# -------------------------------
+# Hashes e senhas
+*.hash
+*.pot
+cracked_password.txt
+passwords.txt
+credentials.txt
+
+# Handshakes WPA/WPA2
+*.cap
+handshake*.cap
+*.hccapx
+*.pcapng
+
+# -------------------------------
+# 📁 Wordlists (opcional - podem ser grandes)
+# -------------------------------
+wordlists/rockyou.txt
+wordlists/rockyou.txt.gz
+wordlists/*.lst
+wordlists/*.dic
+wordlists/custom_*.txt
+
+# -------------------------------
+# 🧪 Arquivos temporários
+# -------------------------------
+# Temporários do sistema
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.swp
+*.swo
+*~
+.*.swp
+
+# Temporários de ferramentas
+nmap*.txt
+arp-scan*.txt
+hydra*.txt
+john*.pot
+*.restore
+
+# -------------------------------
+# 📦 Dependências e builds
+# -------------------------------
+# Python (se aplicável)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Node (se aplicável)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# -------------------------------
+# 🖥️ Arquivos de IDE/Editor
+# -------------------------------
+# VSCode
+.vscode/
+*.code-workspace
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.vim/
+.vimrc
+.swp
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# -------------------------------
+# 🐍 Arquivos específicos do sistema
+# -------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Linux
+.directory
+*.directory
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# -------------------------------
+# 🔧 Configurações locais
+# -------------------------------
+# Configurações de usuário
+config.local
+.env
+.env.local
+settings.local
+config.user
+
+# Arquivos de teste
+test_*.txt
+temp_*
+debug_*
+
+# -------------------------------
+# 📦 Arquivos compactados (geralmente não devem ser commitados)
+# -------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# -------------------------------
+# 🚫 Arquivos proibidos por segurança
+# -------------------------------
+# NUNCA commitar credenciais reais
+*password*
+*secret*
+*credential*
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# -------------------------------
+# 📋 Relatórios e documentos gerados
+# -------------------------------
+relatorio_*.pdf
+relatorio_*.html
+report_*.pdf
+report_*.html
+evidencias/
+forensics/
+
+# -------------------------------
+# 🧪 Diretórios de teste
+# -------------------------------
+tests/output/
+tests/temp/
+test_results/
+
+# -------------------------------
+# 📚 Documentação gerada automaticamente
+# -------------------------------
+docs/_build/
+docs/api/
+site/
+
+# -------------------------------
+# 🔄 Arquivos de merge e conflitos
+# -------------------------------
+*.orig
+*.rej
+*.merge
+*.merged
+
+# -------------------------------
+# 📦 Arquivos específicos do projeto
+# -------------------------------
+# Evitar commit de resultados de scan
+*.nmap
+*.gnmap
+*.xml
+
+# Evitar commit de handshakes capturados
+handshake-*.cap
+wpa-handshake-*.cap
+
+# Evitar commit de logs de cracking
+cracked-*.txt
+john-*.pot
+
+# -------------------------------
+# ✅ EXCEÇÕES (arquivos que DEVEM ser commitados mesmo com regras acima)
+# -------------------------------
+# NÃO ignorar estes arquivos importantes
+!README.md
+!CONTRIBUTING.md
+!CODE_OF_CONDUCT.md
+!LICENSE
+!CHANGELOG.md
+!install.sh
+!wifipwn-bhu.sh
+
+# Não ignorar wordlists de exemplo (se pequenas)
+!wordlists/example_users.txt
+!wordlists/example_passwords.txt
+
+# Não ignorar configurações padrão
+!config/default.conf
+!config/example.conf
+
+# Não ignorar documentação de exemplo
+!docs/examples/*.md
+!docs/screenshots/*.png
+
+# -------------------------------
+# 📝 Notas importantes
+# -------------------------------
+# ATENÇÃO:
+# 1. Este .gitignore protege contra commit de dados sensíveis
+# 2. Resultados de scan contêm informações de redes reais
+# 3. Nunca commitar credenciais ou dados de clientes
+# 4. Sempre revisar o que está sendo commitado
+# 5. Mantenha este arquivo atualizado com novas extensões
