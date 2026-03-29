@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Version-4.0f-red?style=for-the-badge&logo=github"/>
   <img src="https://img.shields.io/badge/License-MIT%20with%20Ethics-blue?style=for-the-badge&logo=opensourceinitiative"/>
-  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20BlackArch%20%7C%20Kali-green?style=for-the-badge&logo=linux"/>
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Termux%20%7C%20BlackArch%20%7C%20Kali-green?style=for-the-badge&logo=linux"/>
   <img src="https://img.shields.io/badge/Purpose-Educational%20Only-orange?style=for-the-badge&logo=bookstack"/>
 </p>
 
